@@ -5,67 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min Hemsida</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #f4f4f4;
-        }
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
+    body {
+        font-family: Arial, sans-serif;
+        min-height: 100vh;
+        background: linear-gradient(135deg, #0f172a, #1e1b4b, #312e81);
+        color: white;
+    }
 
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
+    header {
+        text-align: center;
+        padding: 40px 20px;
+        background: rgba(0,0,0,0.3);
+        backdrop-filter: blur(10px);
+    }
 
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-        }
+    header h1 {
+        font-size: 3rem;
+        margin-bottom: 10px;
+    }
 
-        main {
-            max-width: 900px;
-            margin: auto;
-            padding: 20px;
-            background-color: white;
-        }
+    nav {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 15px;
+        background: rgba(255,255,255,0.08);
+    }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
-        }
-    </style>
-</head>
-<body>
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: 0.3s;
+    }
 
-<header>
-    <h1>Välkommen till min hemsida</h1>
-</header>
+    nav a:hover {
+        color: #2afadf;
+    }
 
-<nav>
-    <a href="index.html">Hem</a>
-    <a href="about.html">Om</a>
-    <a href="contact.html">Kontakt</a>
-</nav>
+    main {
+        max-width: 1000px;
+        margin: 50px auto;
+        text-align: center;
+        padding: 20px;
+    }
 
-<main>
-    <h2>Startsida</h2>
-    <p>Det här är min hemsidas startsida.</p>
-</main>
+    .card {
+        background: rgba(255,255,255,0.08);
+        backdrop-filter: blur(12px);
+        border-radius: 25px;
+        padding: 40px;
+        box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    }
 
-<footer>
-    © 2026 Min Hemsida
-</footer>
+    .card h2 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
 
-</body>
+    .card p {
+        color: #d1d5db;
+        margin-bottom: 30px;
+    }
+
+    .anime-btn {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-size: 1.3rem;
+        font-weight: bold;
+        padding: 18px 40px;
+        border-radius: 50px;
+        background: linear-gradient(
+            45deg,
+            #ff0080,
+            #7928ca,
+            #2afadf
+        );
+        background-size: 300% 300%;
+        animation: glow 5s ease infinite;
+        box-shadow:
+            0 0 20px #ff0080,
+            0 0 40px #7928ca;
+        transition: 0.3s;
+    }
+
+    .anime-btn:hover {
+        transform: scale(1.1);
+        box-shadow:
+            0 0 30px #ff0080,
+            0 0 60px #2afadf;
+    }
+
+    @keyframes glow {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+        margin-top: 50px;
+        background: rgba(0,0,0,0.3);
+    }
+</style>
+```
+
+```
+    <a href="anime.html" class="anime-btn">
+        ✨ Anime ✨
+    </a>
+</div>
 </html>
+```
+
