@@ -1,10 +1,12 @@
 <!DOCTYPE html>
+
 <html lang="sv">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Min Hemsida</title>
-    <style>
+
+<style>
     * {
         margin: 0;
         padding: 0;
@@ -16,6 +18,8 @@
         min-height: 100vh;
         background: linear-gradient(135deg, #0f172a, #1e1b4b, #312e81);
         color: white;
+        display: flex;
+        flex-direction: column;
     }
 
     header {
@@ -50,7 +54,9 @@
     }
 
     main {
+        flex: 1;
         max-width: 1000px;
+        width: 100%;
         margin: 50px auto;
         text-align: center;
         padding: 20px;
@@ -112,17 +118,40 @@
     footer {
         text-align: center;
         padding: 20px;
-        margin-top: 50px;
         background: rgba(0,0,0,0.3);
     }
 </style>
-```
 
-```
-    <a href="anime.html" class="anime-btn">
-        ✨ Anime ✨
-    </a>
-</div>
+</head>
+<body>
+
+<header>
+    <h1>🌸 Välkommen till min hemsida 🌸</h1>
+    <p>Utforska innehållet nedan</p>
+</header>
+
+<nav>
+    <a href="index.html">Hem</a>
+    <a href="about.html">Om</a>
+    <a href="contact.html">Kontakt</a>
+</nav>
+
+<main>
+    <div class="card">
+        <h2>Startsida</h2>
+        <p>
+            Välkommen till min hemsida! Klicka på anime-knappen för att öppna anime-sidan.
+        </p>
+
+        <a href="anime.html" class="anime-btn">
+            ✨ Anime ✨
+        </a>
+    </div>
+</main>
+
+<footer>
+    © 2026 Min Hemsida
+</footer>
+
+</body>
 </html>
-```
-
